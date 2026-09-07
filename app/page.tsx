@@ -12,10 +12,8 @@ import { SEOSection } from "@/components/sections/SEOSection";
 import { DomainHosting } from "@/components/sections/DomainHosting";
 import { Process } from "@/components/sections/Process";
 import { Leadership } from "@/components/sections/Leadership";
-import { CaseStudies } from "@/components/sections/CaseStudies";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { Packages } from "@/components/sections/Packages";
-import { ProofGallery } from "@/components/sections/ProofGallery";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 
@@ -24,9 +22,9 @@ export default function HomePage() {
     <>
       <Hero />
       <TrustBar />
+      <LocalSEO />
       <Services />
       <GrowthEcosystem />
-      <LocalSEO />
       <LocalRadar />
       <OurTechnology />
       <AIAgents />
@@ -36,10 +34,8 @@ export default function HomePage() {
       <DomainHosting />
       <Process />
       <Leadership />
-      <CaseStudies />
       <WhyUs />
       <Packages />
-      <ProofGallery />
       <ContactSection />
       <FinalCTA />
     </>

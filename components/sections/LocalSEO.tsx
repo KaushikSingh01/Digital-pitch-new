@@ -61,14 +61,14 @@ export function LocalSEO() {
     <section className="section-pad">
       <div className="container-x">
         <SectionHeading
-          eyebrow="Google Business Profile & Local SEO"
+          eyebrow="Our Specialty — Google Business Profile"
           title={
             <>
-              Get Found Where Customers Are{" "}
-              <span className="text-gradient-blue">Searching</span>
+              GMB Optimization —{" "}
+              <span className="text-gradient-blue">From Setup To Verification</span>
             </>
           }
-          subtitle="When people search for your service nearby, we make sure you're the business they find, trust and call first."
+          subtitle="Google Business Profile is what we do best. We handle the full process end to end — profile setup, verification preparation and ongoing optimization — so you show up on Google Search and Maps when local customers are looking."
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-2 lg:items-center">
@@ -82,8 +82,8 @@ export function LocalSEO() {
                   </li>
                 ))}
               </ul>
-              <Button href="/services/local-seo" variant="primary" size="md" className="mt-7">
-                Improve My Google Ranking
+              <Button href="/services/google-business-profile" variant="primary" size="md" className="mt-7">
+                See Our GBP Process
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </GlassCard>

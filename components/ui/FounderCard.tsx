@@ -6,17 +6,29 @@ import { GlassCard } from "./GlassCard";
 export function FounderCard({ founder }: { founder: Founder }) {
   return (
     <GlassCard glowBorder className="h-full !p-0 overflow-hidden">
-      <div className="flex h-full flex-col sm:flex-row">
-        {/* Portrait */}
-        <div className="relative aspect-[4/5] w-full shrink-0 sm:aspect-auto sm:w-[42%]">
+      <div className="flex h-full flex-col">
+        {/* Portrait — full photo, never cropped. Blurred copy fills the frame behind. */}
+        <div className="relative aspect-[4/5] w-full overflow-hidden">
+          {/* blurred backdrop (same image) so the contained photo has no empty bars */}
+          <Image
+            src={founder.photo}
+            alt=""
+            aria-hidden="true"
+            fill
+            sizes="(max-width: 1024px) 100vw, 560px"
+            className="scale-110 object-cover opacity-30 blur-2xl"
+          />
+          <div className="absolute inset-0 bg-ink-950/40" />
+          {/* full, uncropped foreground */}
           <Image
             src={founder.photo}
             alt={`${founder.name} — ${founder.role}, DigitalPitch Technologies`}
             fill
-            sizes="(max-width: 640px) 100vw, 320px"
-            className="object-cover object-top"
+            sizes="(max-width: 1024px) 100vw, 560px"
+            className="object-contain"
+            priority
           />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-950/70 via-transparent to-transparent sm:bg-gradient-to-r sm:from-transparent sm:to-ink-900/30" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink-900 to-transparent" />
         </div>
 
         {/* Details */}

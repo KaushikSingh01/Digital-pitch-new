@@ -31,10 +31,10 @@ export function Hero() {
 
           <Reveal delay={0.12}>
             <p className="mx-auto mt-6 max-w-xl text-pretty text-base leading-relaxed text-slate-300 sm:text-lg lg:mx-0">
-              DigitalPitch Technologies combines Google Business Profile
-              expertise, SEO, high-performance websites, SaaS technology and AI
-              automation to help businesses get discovered, capture more
-              opportunities and operate more efficiently.
+              We specialise in Google Business Profile setup, verification and
+              optimization — getting your business seen on Google Search and Maps.
+              Around that, we build high-performance websites, SEO, SaaS tools and
+              AI automation into one complete growth system.
             </p>
           </Reveal>
 
@@ -66,7 +66,7 @@ export function Hero() {
 
           <Reveal delay={0.3}>
             <ul className="mt-7 flex flex-wrap justify-center gap-2 lg:justify-start">
-              {["Google Business Profile", "Local SEO", "Web Development", "SaaS", "AI Automation"].map((chip) => (
+              {["GBP Setup & Verification", "Local SEO", "Google Maps", "Web & SaaS", "AI Automation"].map((chip) => (
                 <li
                   key={chip}
                   className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs font-medium text-slate-300"

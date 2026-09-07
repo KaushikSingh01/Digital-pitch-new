@@ -71,7 +71,7 @@ const STAGES: Stage[] = [
     heading: "Prepare Your Business For Google Verification",
     intro:
       "Google determines which verification methods are available for each Business Profile. DigitalPitch helps business owners prepare accurate business information and supporting business evidence before completing the verification option Google provides. Possible Google-selected methods may include video, phone/text, email, live video or other available methods.",
-    note: "Verification availability and approval are controlled by Google. DigitalPitch Technologies cannot guarantee verification or select the verification method.",
+    note: "We manage the full verification process with you, end to end. Note: Google decides which verification method is offered and makes the final approval — we prepare everything to give your profile the best chance.",
   },
   {
     no: "04",

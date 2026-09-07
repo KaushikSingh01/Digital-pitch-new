@@ -513,18 +513,18 @@ export type ServiceCard = {
 };
 
 export const SERVICE_CARDS: ServiceCard[] = [
-  { name: "Digital Marketing", icon: "Megaphone", blurb: "Full-funnel campaigns that turn attention into customers.", href: "/services/digital-marketing" },
+  { name: "Google Business Profile", icon: "Store", blurb: "Setup, verification & optimization — our specialty.", href: "/services/google-business-profile" },
+  { name: "Google Maps Ranking", icon: "Map", blurb: "Show up first when locals search nearby.", href: "/services/google-business-profile" },
+  { name: "Local SEO", icon: "MapPin", blurb: "Own the map pack and 'near me' searches.", href: "/services/local-seo" },
   { name: "Website Design & Development", icon: "MonitorSmartphone", blurb: "Fast, modern sites engineered to convert.", href: "/services/website-development" },
   { name: "Search Engine Optimization", icon: "TrendingUp", blurb: "Rank for the searches your buyers actually make.", href: "/services/seo" },
-  { name: "Local SEO", icon: "MapPin", blurb: "Own the map pack and 'near me' searches.", href: "/services/local-seo" },
-  { name: "Google Business Profile", icon: "Store", blurb: "A profile that turns searches into calls.", href: "/services/google-business-profile" },
-  { name: "Google Maps Ranking", icon: "Map", blurb: "Show up first when locals search nearby.", href: "/services/local-seo" },
   { name: "AI Agents", icon: "Bot", blurb: "AI employees that answer and book 24/7.", href: "/services/ai-agents" },
   { name: "AI Automation", icon: "Workflow", blurb: "Put lead handling and follow-up on autopilot.", href: "/services/ai-automation" },
   { name: "Lead Generation", icon: "Target", blurb: "A predictable pipeline of qualified leads.", href: "/services/lead-generation" },
-  { name: "Domain Registration", icon: "Globe", blurb: "Secure the perfect domain for your brand.", href: "/services/domain-hosting" },
-  { name: "Web Hosting", icon: "Server", blurb: "Fast, secure, managed cloud hosting.", href: "/services/domain-hosting" },
+  { name: "Digital Marketing", icon: "Megaphone", blurb: "Full-funnel campaigns that turn attention into customers.", href: "/services/digital-marketing" },
+  { name: "Google Ads / PPC", icon: "MousePointerClick", blurb: "Profitable paid traffic that converts.", href: "/services/digital-marketing" },
   { name: "Social Media Marketing", icon: "Share2", blurb: "Build audience and demand on social.", href: "/services/digital-marketing" },
   { name: "Online Reputation Management", icon: "ShieldCheck", blurb: "Earn reviews and protect your brand.", href: "/services/local-seo" },
-  { name: "Google Ads / PPC", icon: "MousePointerClick", blurb: "Profitable paid traffic that converts.", href: "/services/digital-marketing" },
+  { name: "Domain Registration", icon: "Globe", blurb: "Secure the perfect domain for your brand.", href: "/services/domain-hosting" },
+  { name: "Web Hosting", icon: "Server", blurb: "Fast, secure, managed cloud hosting.", href: "/services/domain-hosting" },
 ];
