@@ -1,0 +1,122 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { Menu, X, MessageCircle } from "lucide-react";
+import { NAV, whatsappPrimaryWithMessage } from "@/lib/site";
+import { cn } from "@/lib/cn";
+import { Logo } from "./Logo";
+import { Button } from "./Button";
+
+export function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // lock body scroll when mobile menu open
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  return (
+    <header
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
+        scrolled
+          ? "glass-strong border-b border-white/10 shadow-card"
+          : "bg-transparent border-b border-transparent",
+      )}
+    >
+      <nav className="container-x flex h-16 items-center justify-between lg:h-[72px]">
+        <Logo />
+
+        {/* Desktop nav */}
+        <ul className="hidden items-center gap-1 lg:flex">
+          {NAV.map((item) => (
+            <li key={item.href}>
+              <Link
+                href={item.href}
+                className="rounded-full px-3.5 py-2 text-sm font-medium text-slate-300 transition-colors hover:bg-white/5 hover:text-white"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <div className="hidden items-center gap-2.5 lg:flex">
+          <Button
+            href={whatsappPrimaryWithMessage}
+            variant="secondary"
+            size="sm"
+            aria-label="WhatsApp us"
+          >
+            <MessageCircle className="h-4 w-4" aria-hidden="true" />
+            WhatsApp Us
+          </Button>
+          <Button href="/contact" variant="primary" size="sm">
+            Book Free Consultation
+          </Button>
+        </div>
+
+        {/* Mobile toggle */}
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          className="grid h-10 w-10 place-items-center rounded-xl glass text-white lg:hidden"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+        >
+          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
+      </nav>
+
+      {/* Mobile menu */}
+      <div
+        className={cn(
+          "lg:hidden overflow-hidden transition-[max-height,opacity] duration-300",
+          open ? "max-h-[85vh] opacity-100" : "max-h-0 opacity-0",
+        )}
+      >
+        <div className="glass-strong border-t border-white/10 px-5 pb-8 pt-2">
+          <ul className="flex flex-col">
+            {NAV.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="block rounded-xl px-4 py-3 text-base font-medium text-slate-200 hover:bg-white/5 hover:text-white"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-4 flex flex-col gap-3">
+            <Button
+              href={whatsappPrimaryWithMessage}
+              variant="whatsapp"
+              size="md"
+              className="w-full"
+            >
+              <MessageCircle className="h-5 w-5" aria-hidden="true" />
+              WhatsApp Us
+            </Button>
+            <Button href="/contact" variant="primary" size="md" className="w-full">
+              Book Free Consultation
+            </Button>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
