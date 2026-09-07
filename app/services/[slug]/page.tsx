@@ -19,8 +19,10 @@ import { ContactCards } from "@/components/ui/ContactCards";
 import { JsonLd } from "@/components/ui/JsonLd";
 
 // Statically render all service pages at build time.
+// "google-business-profile" has its own bespoke route, so exclude it here to
+// avoid two pages resolving to the same path.
 export function generateStaticParams() {
-  return SERVICE_SLUGS.map((slug) => ({ slug }));
+  return SERVICE_SLUGS.filter((slug) => slug !== "google-business-profile").map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {

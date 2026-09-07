@@ -31,6 +31,19 @@ export function organizationSchema() {
         availableLanguage: ["English", "Hindi"],
       },
     ],
+    founder: [
+      { "@type": "Person", name: "Naveen Singh", jobTitle: "Founder & CEO" },
+      { "@type": "Person", name: "Kaushik Singh", jobTitle: "Co-Founder & Technology Lead" },
+    ],
+    knowsAbout: [
+      "Google Business Profile",
+      "Local SEO",
+      "Search Engine Optimization",
+      "Website Development",
+      "SaaS Development",
+      "AI Automation",
+      "Lead Generation",
+    ],
     sameAs: [] as string[], // add social profile URLs when live
   };
 }
@@ -73,6 +86,42 @@ export function faqSchema(faqs: FAQ[]) {
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
     })),
+  };
+}
+
+export function personSchema(p: {
+  name: string;
+  role: string;
+  bio: string;
+  photo: string;
+  slug: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: p.name,
+    jobTitle: p.role,
+    description: p.bio,
+    image: `${BASE_URL}${p.photo}`,
+    url: `${BASE_URL}/about#${p.slug}`,
+    worksFor: { "@type": "Organization", name: SITE.name, url: BASE_URL },
+  };
+}
+
+export function softwareApplicationSchema(app: {
+  name: string;
+  url: string;
+  description: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: app.name,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    url: app.url,
+    description: app.description,
+    publisher: { "@type": "Organization", name: SITE.name, url: BASE_URL },
   };
 }
 

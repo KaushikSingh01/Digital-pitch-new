@@ -56,15 +56,23 @@ export const whatsappIndiaWithMessage = `${CONTACT.whatsappIndiaHref}?text=${enc
 // Navigation
 // -----------------------------------------------------------------------------
 
-export type NavItem = { label: string; href: string };
+export type NavItem = { label: string; href: string; children?: NavItem[] };
 
 export const NAV: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/#services" },
+  { label: "Google Business Profile", href: "/services/google-business-profile" },
+  { label: "SEO", href: "/services/seo" },
   { label: "AI Solutions", href: "/#ai-agents" },
+  {
+    label: "Our Technology",
+    href: "/#our-technology",
+    children: [
+      { label: "GBP LocalRadar", href: "https://gbplocalradar.com/" },
+    ],
+  },
   { label: "Portfolio", href: "/#portfolio" },
   { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 

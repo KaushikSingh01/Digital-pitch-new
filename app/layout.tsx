@@ -5,8 +5,9 @@ import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import { JsonLd } from "@/components/ui/JsonLd";
-import { organizationSchema, websiteSchema } from "@/lib/schema";
+import { organizationSchema, websiteSchema, softwareApplicationSchema } from "@/lib/schema";
 import { SITE, BASE_URL } from "@/lib/site";
+import { LOCALRADAR } from "@/lib/company";
 
 // Self-hosted variable fonts (no runtime dependency on Google Fonts).
 const inter = localFont({
@@ -91,7 +92,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${sora.variable}`} suppressHydrationWarning>
       <body className="min-h-screen bg-ink-950 font-sans text-slate-100 antialiased">
-        <JsonLd data={[organizationSchema(), websiteSchema()]} />
+        <JsonLd
+          data={[
+            organizationSchema(),
+            websiteSchema(),
+            softwareApplicationSchema({
+              name: LOCALRADAR.name,
+              url: LOCALRADAR.url,
+              description: LOCALRADAR.description,
+            }),
+          ]}
+        />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-electric-500 focus:px-4 focus:py-2 focus:text-white"

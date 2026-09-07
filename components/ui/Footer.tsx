@@ -33,9 +33,17 @@ export function Footer() {
               {SITE.tagline}
             </p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-500">
-              Your entire digital growth stack — websites, SEO, Google visibility,
-              AI agents and automation — under one roof.
+              Your entire digital growth stack — Google Business Profile, SEO,
+              websites, SaaS and AI automation — under one roof.
             </p>
+            <a
+              href="https://gbplocalradar.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs font-medium text-cyan-300 transition-colors hover:text-cyan-200"
+            >
+              Our product: GBP LocalRadar ↗
+            </a>
             <div className="mt-6 flex flex-wrap gap-2.5">
               {SOCIALS.map((s) => {
                 const I = socialIcons[s.icon] ?? Globe;
