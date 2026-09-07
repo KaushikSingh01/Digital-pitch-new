@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/cn";
 
 export function Logo({ className, onClick }: { className?: string; onClick?: () => void }) {
@@ -9,10 +10,14 @@ export function Logo({ className, onClick }: { className?: string; onClick?: () 
       className={cn("group inline-flex items-center gap-2.5", className)}
       aria-label="DigitalPitch Technologies — home"
     >
-      <span className="relative grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-electric-500 to-cyan-500 shadow-glow">
-        <span className="text-sm font-black tracking-tighter text-white">DP</span>
-        <span className="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/20" />
-      </span>
+      <Image
+        src="/logo-mark.png"
+        alt="DigitalPitch Technologies logo"
+        width={477}
+        height={601}
+        priority
+        className="h-9 w-auto drop-shadow-[0_0_14px_rgba(34,211,238,0.25)]"
+      />
       <span className="flex flex-col leading-none">
         <span className="text-[15px] font-bold tracking-tight text-white">
           DigitalPitch

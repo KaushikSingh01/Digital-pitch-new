@@ -2,6 +2,9 @@
   "name": "digitalpitch-technologies",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+  "node": "22.x"
+},
   "description": "DigitalPitch Technologies — premium 3D digital growth agency website",
   "scripts": {
     "dev": "next dev",
