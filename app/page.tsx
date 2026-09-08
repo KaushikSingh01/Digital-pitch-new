@@ -9,6 +9,7 @@ import { AIAgents } from "@/components/sections/AIAgents";
 import { AIAutomation } from "@/components/sections/AIAutomation";
 import { WebDev } from "@/components/sections/WebDev";
 import { SEOSection } from "@/components/sections/SEOSection";
+import { SeoPortfolio } from "@/components/sections/SeoPortfolio";
 import { DomainHosting } from "@/components/sections/DomainHosting";
 import { Process } from "@/components/sections/Process";
 import { Leadership } from "@/components/sections/Leadership";
@@ -31,6 +32,7 @@ export default function HomePage() {
       <AIAutomation />
       <WebDev />
       <SEOSection />
+      <SeoPortfolio />
       <DomainHosting />
       <Process />
       <Leadership />

@@ -70,6 +70,27 @@ export const FOUNDERS: Founder[] = [
   },
 ];
 
+// Historical SEO portfolio — DATED past-project evidence (SEMrush snapshots,
+// March 2020). Shown as historical evidence, NOT current performance claims.
+// Figures are read directly from the supplied screenshots.
+export interface SeoProject {
+  client: string;
+  domain: string;
+  location: string;
+  organicTraffic: string;
+  backlinks: string;
+  image: string;
+}
+
+export const SEO_PORTFOLIO_DATE = "SEMrush · Mar 2020";
+
+export const SEO_PORTFOLIO: SeoProject[] = [
+  { client: "A.S.I.S.T. Translation & Interpreting", domain: "asisttranslations.com", location: "Ohio, USA", organicTraffic: "499", backlinks: "2K", image: "/portfolio/seo-asist.png" },
+  { client: "Ziff Davis B2B", domain: "ziffdavisb2b.com", location: "California, USA", organicTraffic: "295", backlinks: "28.7K", image: "/portfolio/seo-ziffdavis.png" },
+  { client: "TMP Organics Butcher & Supermarket", domain: "tmporganicsbutcherandsupermarket.com.au", location: "Queensland, Australia", organicTraffic: "63", backlinks: "381", image: "/portfolio/seo-tmp.png" },
+  { client: "Spider Business Center", domain: "spiderbc.com", location: "Dubai", organicTraffic: "27", backlinks: "1.6K", image: "/portfolio/seo-spider.png" },
+];
+
 // GBP LocalRadar — in-house SaaS product.
 export const LOCALRADAR = {
   name: "GBP LocalRadar",

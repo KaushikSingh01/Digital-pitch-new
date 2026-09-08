@@ -71,6 +71,7 @@ export const NAV: NavItem[] = [
       { label: "GBP LocalRadar", href: "https://gbplocalradar.com/" },
     ],
   },
+  { label: "Portfolio", href: "/#portfolio" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
