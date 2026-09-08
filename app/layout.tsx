@@ -1,9 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
+import { Aurora } from "@/components/ui/Aurora";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { organizationSchema, websiteSchema, softwareApplicationSchema } from "@/lib/schema";
 import { SITE, BASE_URL } from "@/lib/site";
@@ -109,10 +111,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
+        <Aurora />
         <Navbar />
         <main id="main">{children}</main>
         <Footer />
         <FloatingWhatsApp />
+        <Analytics />
       </body>
     </html>
   );

@@ -91,6 +91,21 @@ export const SEO_PORTFOLIO: SeoProject[] = [
   { client: "Spider Business Center", domain: "spiderbc.com", location: "Dubai", organicTraffic: "27", backlinks: "1.6K", image: "/portfolio/seo-spider.png" },
 ];
 
+// Client reviews. ONLY real, verified reviews go here — never fabricated ones.
+// Add each as { name, rating (1-5), text, date?, location? } once received.
+export interface Review {
+  name: string;
+  rating: number;
+  text: string;
+  date?: string;
+  location?: string;
+}
+
+export const REVIEWS: Review[] = [
+  // Example of the shape (kept empty until real Google reviews are supplied):
+  // { name: "Jane D.", rating: 5, text: "…", date: "2026-05", location: "London, UK" },
+];
+
 // GBP LocalRadar — in-house SaaS product.
 export const LOCALRADAR = {
   name: "GBP LocalRadar",

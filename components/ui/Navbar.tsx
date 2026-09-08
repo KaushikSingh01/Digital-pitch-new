@@ -79,11 +79,11 @@ export function Navbar() {
           : "bg-transparent border-b border-transparent",
       )}
     >
-      <nav className="container-x flex h-16 items-center justify-between lg:h-[72px]">
-        <Logo />
+      <nav className="container-x flex h-16 items-center justify-between gap-4 lg:h-[72px]">
+        <Logo className="shrink-0" />
 
-        {/* Desktop nav (xl and up — many items) */}
-        <ul className="hidden items-center gap-0.5 xl:flex">
+        {/* Desktop nav (xl and up) */}
+        <ul className="hidden min-w-0 items-center gap-0.5 xl:flex">
           {NAV.map((item) => (
             <li key={item.label}>
               <NavLink item={item} />
@@ -91,13 +91,18 @@ export function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-2.5 xl:flex">
-          <Button href={whatsappPrimaryWithMessage} variant="secondary" size="sm" aria-label="WhatsApp us">
+        <div className="hidden shrink-0 items-center gap-2 xl:flex">
+          <a
+            href={whatsappPrimaryWithMessage}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp us"
+            className="grid h-9 w-9 place-items-center rounded-full bg-[#25D366] text-white transition-transform hover:-translate-y-0.5"
+          >
             <MessageCircle className="h-4 w-4" aria-hidden="true" />
-            WhatsApp
-          </Button>
+          </a>
           <Button href="/contact" variant="primary" size="sm">
-            Book Free Consultation
+            Free Consultation
           </Button>
         </div>
 

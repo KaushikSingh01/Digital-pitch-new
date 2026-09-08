@@ -58,23 +58,28 @@ export const whatsappIndiaWithMessage = `${CONTACT.whatsappIndiaHref}?text=${enc
 
 export type NavItem = { label: string; href: string; children?: NavItem[] };
 
+// Concise top navigation (kept short so it never crowds the logo).
 export const NAV: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/#services" },
-  { label: "Google Business Profile", href: "/services/google-business-profile" },
-  { label: "SEO", href: "/services/seo" },
-  { label: "AI Solutions", href: "/#ai-agents" },
+  { label: "Google Business", href: "/services/google-business-profile" },
   {
-    label: "Our Technology",
+    label: "Technology",
     href: "/#our-technology",
     children: [
+      { label: "AI Solutions", href: "/#ai-agents" },
       { label: "GBP LocalRadar", href: "https://gbplocalradar.com/" },
     ],
   },
   { label: "Portfolio", href: "/#portfolio" },
+  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
+
+// Google review link — set this to your GBP "write a review" URL when available.
+// Until then the reviews section falls back to WhatsApp contact.
+export const REVIEW_URL = "";
 
 // Footer service links map to real service routes.
 export const FOOTER_SERVICES: NavItem[] = [
