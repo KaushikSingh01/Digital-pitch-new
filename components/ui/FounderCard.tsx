@@ -5,7 +5,7 @@ import { GlassCard } from "./GlassCard";
 
 export function FounderCard({ founder }: { founder: Founder }) {
   return (
-    <GlassCard glowBorder className="h-full !p-0 overflow-hidden">
+    <GlassCard glowBorder tilt className="h-full !p-0 overflow-hidden">
       <div className="flex h-full flex-col">
         {/* Portrait — full photo, never cropped. Blurred copy fills the frame behind. */}
         <div className="relative aspect-[4/5] w-full overflow-hidden">

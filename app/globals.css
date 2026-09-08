@@ -53,6 +53,31 @@ h1, h2, h3 {
   50% { background-position: 100% 50%; }
 }
 
+/* Animated keyword underline accent */
+.kw-underline {
+  position: relative;
+  white-space: nowrap;
+}
+.kw-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.12em;
+  height: 0.12em;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #22d3ee, #8b5cf6);
+  transform-origin: left center;
+  animation: kw-grow 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes kw-grow {
+  from { transform: scaleX(0); opacity: 0; }
+  to { transform: scaleX(1); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kw-underline::after { animation: none; transform: scaleX(1); }
+}
+
 /* Accessible focus ring */
 :focus-visible {
   outline: 2px solid var(--cyan);
