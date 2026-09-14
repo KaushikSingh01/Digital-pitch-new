@@ -22,7 +22,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={0.05}>
-            <h1 className="mt-6 text-balance text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="mt-6 text-balance text-5xl font-extrabold leading-[0.98] tracking-[-0.03em] sm:text-6xl lg:text-7xl xl:text-[5.25rem]">
               <span className="text-gradient">BUILD. RANK.</span>
               <br />
               <span className="text-gradient-blue">AUTOMATE. GROW.</span>

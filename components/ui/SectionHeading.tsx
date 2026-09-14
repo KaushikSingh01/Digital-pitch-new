@@ -35,7 +35,7 @@ export function SectionHeading({
       <Reveal delay={0.05}>
         <h2
           id={id}
-          className="mt-5 text-balance text-[2rem] font-extrabold leading-[1.1] tracking-tight sm:text-4xl lg:text-[3.25rem]"
+          className="mt-5 text-balance text-[2.15rem] font-extrabold leading-[1.05] tracking-[-0.03em] sm:text-[2.75rem] lg:text-[3.5rem]"
         >
           {title}
         </h2>

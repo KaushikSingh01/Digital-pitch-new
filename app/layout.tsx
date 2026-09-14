@@ -7,6 +7,7 @@ import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 import { Aurora } from "@/components/ui/Aurora";
+import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { organizationSchema, websiteSchema, softwareApplicationSchema } from "@/lib/schema";
 import { SITE, BASE_URL } from "@/lib/site";
@@ -106,6 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <Aurora />
+        <ScrollProgress />
         <Navbar />
         <main id="main">{children}</main>
         <Footer />

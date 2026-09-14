@@ -6,7 +6,7 @@ type Variant = "primary" | "secondary" | "ghost" | "whatsapp";
 type Size = "sm" | "md" | "lg";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 focus-visible:outline-none disabled:opacity-60 disabled:pointer-events-none whitespace-nowrap active:scale-[0.97] active:transition-none";
+  "group/btn relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full font-semibold transition-all duration-300 focus-visible:outline-none disabled:opacity-60 disabled:pointer-events-none whitespace-nowrap active:scale-[0.97] active:transition-none";
 
 const variants: Record<Variant, string> = {
   primary:
@@ -23,6 +23,16 @@ const sizes: Record<Size, string> = {
   md: "px-5 py-2.5 text-sm sm:text-base",
   lg: "px-7 py-3.5 text-base",
 };
+
+// Moving light sheen — sweeps across on hover for a premium feel.
+function Sheen() {
+  return (
+    <span
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 ease-out group-hover/btn:translate-x-full"
+    />
+  );
+}
 
 type CommonProps = {
   children: ReactNode;
@@ -53,6 +63,14 @@ export function Button(props: AsLink | AsButton) {
     className,
   } = props;
   const classes = cn(base, variants[variant], sizes[size], className);
+  const showSheen = variant === "primary" || variant === "whatsapp";
+
+  const inner = (
+    <>
+      {showSheen && <Sheen />}
+      <span className="relative inline-flex items-center gap-2">{children}</span>
+    </>
+  );
 
   if ("href" in props && props.href) {
     const isExternal =
@@ -68,13 +86,13 @@ export function Button(props: AsLink | AsButton) {
           target={props.href.startsWith("http") ? "_blank" : undefined}
           rel={props.href.startsWith("http") ? "noopener noreferrer" : undefined}
         >
-          {children}
+          {inner}
         </a>
       );
     }
     return (
       <Link href={props.href} className={classes}>
-        {children}
+        {inner}
       </Link>
     );
   }
@@ -85,7 +103,7 @@ export function Button(props: AsLink | AsButton) {
       onClick={props.onClick}
       className={classes}
     >
-      {children}
+      {inner}
     </button>
   );
 }

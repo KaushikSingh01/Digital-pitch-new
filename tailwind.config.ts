@@ -9,34 +9,40 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Deep dark base
+        // Deep, warm-neutral near-black base — richer than a flat #000.
         ink: {
-          950: "#03060f",
-          900: "#060b1a",
-          800: "#0a1226",
-          700: "#0e1830",
+          950: "#050609",
+          900: "#080a11",
+          800: "#0d1019",
+          700: "#141926",
+          600: "#1c2233",
         },
         navy: {
-          900: "#050a1a",
-          800: "#0a1430",
+          900: "#050810",
+          800: "#0a1024",
         },
-        // Electric blue highlight
+        // Primary accent — refined iris/electric blue (less "stock blue").
         electric: {
-          400: "#3b82f6",
-          500: "#2563eb",
-          600: "#1d4ed8",
+          400: "#6b95ff",
+          500: "#3b6fff",
+          600: "#2a54e6",
         },
-        // Cyan accent
+        // Secondary spark — a refined teal-cyan, not the default #22d3ee.
         cyan: {
-          300: "#67e8f9",
-          400: "#22d3ee",
-          500: "#06b6d4",
+          300: "#8af0e4",
+          400: "#37e5d4",
+          500: "#12c4b5",
         },
-        // Purple gradient accent
+        // Tertiary — violet, used sparingly for depth.
         violet: {
           400: "#a78bfa",
           500: "#8b5cf6",
           600: "#7c3aed",
+        },
+        // Warm counter-accent — sparing "expensive" gold pop.
+        gold: {
+          400: "#ffd27a",
+          500: "#f5b73d",
         },
       },
       fontFamily: {
@@ -45,18 +51,19 @@ const config: Config = {
       },
       backgroundImage: {
         "radial-glow":
-          "radial-gradient(circle at 50% 0%, rgba(37,99,235,0.18), transparent 55%)",
+          "radial-gradient(circle at 50% 0%, rgba(59,111,255,0.20), transparent 55%)",
         "grid-faint":
-          "linear-gradient(rgba(148,163,184,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,0.06) 1px, transparent 1px)",
+          "linear-gradient(rgba(139,152,180,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(139,152,180,0.05) 1px, transparent 1px)",
       },
       backgroundSize: {
-        grid: "44px 44px",
+        grid: "48px 48px",
       },
       boxShadow: {
-        glow: "0 0 0 1px rgba(59,130,246,0.18), 0 20px 60px -20px rgba(37,99,235,0.45)",
+        glow: "0 0 0 1px rgba(59,111,255,0.16), 0 24px 70px -24px rgba(59,111,255,0.45)",
         "glow-cyan":
-          "0 0 0 1px rgba(34,211,238,0.20), 0 24px 70px -24px rgba(6,182,212,0.40)",
-        card: "0 10px 40px -18px rgba(2,6,15,0.9)",
+          "0 0 0 1px rgba(55,229,212,0.18), 0 28px 80px -28px rgba(18,196,181,0.42)",
+        card: "0 18px 50px -24px rgba(2,4,10,0.95)",
+        "card-lift": "0 30px 80px -30px rgba(2,4,10,0.9), 0 0 0 1px rgba(139,152,180,0.08)",
       },
       keyframes: {
         float: {
@@ -99,6 +106,13 @@ const config: Config = {
           "0%,100%": { transform: "translate(0,0) scale(1)" },
           "50%": { transform: "translate(-4%,-5%) scale(1.2)" },
         },
+        "spin-slow": {
+          to: { transform: "rotate(360deg)" },
+        },
+        "marquee": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         float: "float 6s ease-in-out infinite",
@@ -110,6 +124,8 @@ const config: Config = {
         "aurora-a": "aurora-a 20s ease-in-out infinite",
         "aurora-b": "aurora-b 26s ease-in-out infinite",
         "aurora-c": "aurora-c 32s ease-in-out infinite",
+        "spin-slow": "spin-slow 26s linear infinite",
+        marquee: "marquee 32s linear infinite",
       },
     },
   },

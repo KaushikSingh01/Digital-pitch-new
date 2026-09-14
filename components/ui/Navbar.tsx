@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, MessageCircle, ChevronDown } from "lucide-react";
 import { NAV, whatsappPrimaryWithMessage, type NavItem } from "@/lib/site";
 import { cn } from "@/lib/cn";
@@ -12,13 +13,16 @@ function isExternal(href: string) {
   return href.startsWith("http");
 }
 
-function NavLink({ item }: { item: NavItem }) {
+function NavLink({ item, active }: { item: NavItem; active?: boolean }) {
   if (item.children?.length) {
     return (
       <div className="group relative">
         <Link
           href={item.href}
-          className="inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-slate-300 transition-colors hover:bg-white/5 hover:text-white"
+          className={cn(
+            "inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium transition-colors hover:bg-white/5 hover:text-white",
+            active ? "text-white" : "text-slate-300",
+          )}
         >
           {item.label}
           <ChevronDown className="h-3.5 w-3.5 opacity-70" />
@@ -45,16 +49,29 @@ function NavLink({ item }: { item: NavItem }) {
   return (
     <Link
       href={item.href}
-      className="rounded-full px-3 py-2 text-sm font-medium text-slate-300 transition-colors hover:bg-white/5 hover:text-white"
+      className={cn(
+        "relative rounded-full px-3 py-2 text-sm font-medium transition-colors hover:bg-white/5 hover:text-white",
+        active ? "text-white" : "text-slate-300",
+      )}
     >
       {item.label}
+      {active && (
+        <span className="absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full bg-gradient-to-r from-electric-400 to-cyan-400" />
+      )}
     </Link>
   );
+}
+
+function isActive(pathname: string, href: string) {
+  if (href === "/") return pathname === "/";
+  if (href.startsWith("http") || href.startsWith("/#")) return false;
+  return pathname === href || pathname.startsWith(href + "/");
 }
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -86,7 +103,7 @@ export function Navbar() {
         <ul className="hidden min-w-0 items-center gap-0.5 xl:flex">
           {NAV.map((item) => (
             <li key={item.label}>
-              <NavLink item={item} />
+              <NavLink item={item} active={isActive(pathname, item.href)} />
             </li>
           ))}
         </ul>

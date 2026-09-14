@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --bg: #03060f;
-  --bg-soft: #060b1a;
-  --fg: #f8fafc;
-  --muted: #94a3b8;
-  --electric: #2563eb;
-  --cyan: #22d3ee;
+  --bg: #050609;
+  --bg-soft: #080a11;
+  --bg-elev: #0d1019;
+  --fg: #f4f6fb;
+  --muted: #8b94a7;
+  --electric: #3b6fff;
+  --cyan: #37e5d4;
   --violet: #8b5cf6;
+  --gold: #f5b73d;
+  --hairline: rgba(139, 152, 180, 0.12);
 }
 
 * {
@@ -43,15 +46,30 @@ body {
   overflow-x: hidden;
 }
 
+/* Refined display typography */
 h1, h2, h3 {
-  letter-spacing: -0.02em;
+  font-family: var(--font-display), var(--font-geist-sans), system-ui, sans-serif;
+  letter-spacing: -0.028em;
+  text-wrap: balance;
 }
+h1 { font-weight: 700; }
 
 p {
   text-wrap: pretty;
 }
 
-/* Global keyframes (defined here so they're always available) */
+::selection {
+  background: rgba(59, 111, 255, 0.32);
+  color: #ffffff;
+}
+
+/* Tabular numerals for stats/data */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Global keyframes */
 @keyframes shine {
   0%, 100% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -67,10 +85,10 @@ p {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -0.12em;
-  height: 0.12em;
+  bottom: -0.1em;
+  height: 0.1em;
   border-radius: 999px;
-  background: linear-gradient(90deg, #22d3ee, #8b5cf6);
+  background: linear-gradient(90deg, var(--cyan), var(--electric));
   transform-origin: left center;
   animation: kw-grow 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
@@ -89,66 +107,92 @@ p {
   border-radius: 6px;
 }
 
+/* Fixed scroll-progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  z-index: 60;
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, var(--electric), var(--cyan) 60%, var(--violet));
+  box-shadow: 0 0 12px rgba(55, 229, 212, 0.5);
+}
+
 @layer components {
   .container-x {
     @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
   }
 
-  /* Glassmorphism surface */
+  /* True glassmorphism — inner edge highlight simulates refraction */
   .glass {
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0.02)
+      rgba(255, 255, 255, 0.055),
+      rgba(255, 255, 255, 0.015)
     );
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(148, 163, 184, 0.12);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
   }
 
   .glass-strong {
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.08),
-      rgba(255, 255, 255, 0.03)
+      rgba(255, 255, 255, 0.085),
+      rgba(255, 255, 255, 0.025)
     );
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
     border: 1px solid rgba(148, 163, 184, 0.16);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
   }
 
-  /* Gradient text */
+  /* Gradient display text */
   .text-gradient {
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(
       100deg,
       #ffffff 0%,
-      #bcd4ff 35%,
-      #67e8f9 65%,
+      #cdd9ff 34%,
+      #8af0e4 66%,
       #a78bfa 100%
     );
     background-size: 220% auto;
-    animation: shine 7s ease infinite;
+    animation: shine 8s ease infinite;
   }
 
   .text-gradient-blue {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(100deg, #60a5fa, #22d3ee 45%, #a78bfa 100%);
+    background-image: linear-gradient(100deg, #6b95ff, #37e5d4 48%, #a78bfa 100%);
     background-size: 220% auto;
-    animation: shine 7s ease infinite;
+    animation: shine 8s ease infinite;
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(100deg, #ffe4a3, #f5b73d 55%, #ff9d5c 100%);
   }
 
   /* Animated gradient border wrapper */
   .border-glow {
     position: relative;
     background:
-      linear-gradient(var(--bg-soft), var(--bg-soft)) padding-box,
-      linear-gradient(120deg, rgba(59, 130, 246, 0.75), rgba(34, 211, 238, 0.55), rgba(139, 92, 246, 0.7)) border-box;
+      linear-gradient(var(--bg-elev), var(--bg-elev)) padding-box,
+      linear-gradient(120deg, rgba(59, 111, 255, 0.8), rgba(55, 229, 212, 0.55), rgba(139, 92, 246, 0.7)) border-box;
     border: 1px solid transparent;
   }
 
+  /* Hairline divider that fades at the edges */
+  .hairline {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--hairline) 20%, var(--hairline) 80%, transparent);
+  }
+
   .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-cyan-300;
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-cyan-300;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
   }
 
   .section-pad {
@@ -157,11 +201,36 @@ p {
 }
 
 @layer utilities {
+  /* Richer mesh — layered radial glows in the new palette */
   .bg-mesh {
     background-image:
-      radial-gradient(60rem 40rem at 15% -10%, rgba(37, 99, 235, 0.28), transparent 60%),
-      radial-gradient(50rem 40rem at 100% 0%, rgba(139, 92, 246, 0.22), transparent 55%),
-      radial-gradient(40rem 30rem at 50% 120%, rgba(6, 182, 212, 0.20), transparent 60%);
+      radial-gradient(60rem 40rem at 12% -10%, rgba(59, 111, 255, 0.30), transparent 60%),
+      radial-gradient(50rem 40rem at 100% 0%, rgba(139, 92, 246, 0.20), transparent 55%),
+      radial-gradient(44rem 32rem at 50% 118%, rgba(55, 229, 212, 0.20), transparent 60%);
+  }
+
+  /* Cursor-tracked spotlight — set --mx/--my from JS */
+  .spotlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: radial-gradient(
+      420px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(55, 229, 212, 0.55),
+      rgba(59, 111, 255, 0.28) 30%,
+      transparent 60%
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+  }
+  .spotlight:hover::before {
+    opacity: 1;
   }
 
   .mask-fade-b {
@@ -169,7 +238,6 @@ p {
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   }
 
-  /* Custom scrollbar */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
@@ -185,10 +253,10 @@ p {
   height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #05070f;
+  background: #05060a;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #1d4ed8, #0e7490);
+  background: linear-gradient(180deg, #2a54e6, #12c4b5);
   border-radius: 999px;
-  border: 2px solid #05070f;
+  border: 2px solid #05060a;
 }
