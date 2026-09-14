@@ -47,6 +47,10 @@ h1, h2, h3 {
   letter-spacing: -0.02em;
 }
 
+p {
+  text-wrap: pretty;
+}
+
 /* Global keyframes (defined here so they're always available) */
 @keyframes shine {
   0%, 100% { background-position: 0% 50%; }

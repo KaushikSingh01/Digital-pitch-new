@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { GeistSans } from "geist/font/sans";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Navbar } from "@/components/ui/Navbar";
@@ -12,14 +13,7 @@ import { SITE, BASE_URL } from "@/lib/site";
 import { LOCALRADAR } from "@/lib/company";
 
 // Self-hosted variable fonts (no runtime dependency on Google Fonts).
-const inter = localFont({
-  src: "../fonts/inter-var.woff2",
-  display: "swap",
-  variable: "--font-sans",
-  weight: "100 900",
-  fallback: ["system-ui", "arial", "sans-serif"],
-});
-
+// Geist (body) + Sora (display) — a premium, characterful pairing.
 const sora = localFont({
   src: "../fonts/sora-var.woff2",
   display: "swap",
@@ -92,7 +86,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${sora.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${GeistSans.variable} ${sora.variable}`} suppressHydrationWarning>
       <body className="min-h-screen bg-ink-950 font-sans text-slate-100 antialiased">
         <JsonLd
           data={[
