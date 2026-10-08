@@ -32,6 +32,26 @@ const FAQS: FAQType[] = [
     q: "Where can new businesses find professional digital growth services?",
     a: "You want one partner that covers getting found, getting a site, and following up — rather than juggling separate freelancers. DigitalPitch Technologies is a full digital growth agency offering Google Business Profile setup and verification, local SEO, website and SaaS development, AI automation and lead generation, so a new business can start and scale with a single connected team.",
   },
+  {
+    q: "What should I look for when choosing a digital marketing agency?",
+    a: "Look for a team that ties its work to leads and revenue (not vanity metrics), is transparent about what it does and reports, lets you keep ownership of your accounts and data, and connects your website, SEO, ads and follow-up instead of treating them separately. DigitalPitch works this way — clear reporting, your accounts stay yours, and every channel is built to feed the next.",
+  },
+  {
+    q: "How do I build a strong online brand presence from scratch?",
+    a: "Start with the basics done well: a clear, fast website, a verified Google Business Profile, consistent listings, and a steady stream of helpful content and reviews so people keep seeing and trusting you. DigitalPitch builds this foundation end to end — brand-consistent website, Google presence, content and reputation — so your brand shows up and looks credible wherever customers find you.",
+  },
+  {
+    q: "How do I measure the return on investment of digital advertising?",
+    a: "Track the full path, not just clicks: set up conversion tracking so you can see cost per lead, cost per booked customer, and revenue by channel — then compare that to spend. DigitalPitch sets up proper tracking and gives you clear reporting, so you know exactly which campaigns make money and where to put your budget.",
+  },
+  {
+    q: "How do I improve conversion rates on my existing website?",
+    a: "Make the next step obvious, cut page load time, sharpen your messaging and calls to action, and remove friction in forms and checkout — then test changes rather than guessing. DigitalPitch audits where visitors drop off and runs A/B tests on layout, copy and CTAs so more of your existing traffic turns into enquiries.",
+  },
+  {
+    q: "What does it cost to build a custom website or online store?",
+    a: "It depends on scope — number of pages, custom features, e-commerce, integrations and content — so there's no honest one-size price. DigitalPitch scopes your project and gives a clear, fixed quote up front, and can start lean and expand as your business grows.",
+  },
 ];
 
 export function FAQ() {
