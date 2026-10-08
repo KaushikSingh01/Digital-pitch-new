@@ -17,6 +17,7 @@ import { Leadership } from "@/components/sections/Leadership";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { Packages } from "@/components/sections/Packages";
 import { Reviews } from "@/components/sections/Reviews";
+import { FAQ } from "@/components/sections/FAQ";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 
@@ -42,6 +43,7 @@ export default function HomePage() {
       <WhyUs />
       <Packages />
       <Reviews />
+      <FAQ />
       <ContactSection />
       <FinalCTA />
     </>
