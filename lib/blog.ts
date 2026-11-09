@@ -23,6 +23,713 @@ export interface BlogPost {
 
 export const POSTS: BlogPost[] = [
   {
+    "slug": "choosing-google-business-profile-categories",
+    "title": "Choosing Google Business Profile Categories Without Keyword Stuffing",
+    "description": "How Google Business Profile categories work, how to pick the right primary and additional categories, and where your services and keywords belong instead of the business name.",
+    "category": "Google Business Profile",
+    "author": "Kaushik Singh",
+    "date": "2026-11-09",
+    "readingTime": "7 min read",
+    "tags": [
+      "GBP",
+      "Categories",
+      "Local SEO",
+      "Small Business",
+      "Google Maps"
+    ],
+    "content": [
+      {
+        "type": "p",
+        "text": "Your Google Business Profile category is one of the most important settings on your listing, and one of the easiest to get wrong. It tells Google what kind of business you are, which affects the searches you can appear for and the features your profile shows, such as a menu, booking button or service list."
+      },
+      {
+        "type": "p",
+        "text": "Many owners either pick something too broad (\"Contractor\" for an electrician) or try to squeeze every service they offer into the categories and the business name. This guide explains how categories work, how to choose a primary category, when to add additional ones, and what keyword stuffing looks like so you can avoid it."
+      },
+      {
+        "type": "h2",
+        "text": "How Google Business Profile categories work"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Categories come from a fixed list maintained by Google. You can't type in your own — you choose the closest match from the suggestions.",
+          "Every profile has one primary category. This is the main description of your business and carries the most weight.",
+          "You can add a limited number of additional categories for other things your business genuinely is.",
+          "Categories describe what your business is, not every service it offers. Services, products and the description are where the detail goes.",
+          "Some categories unlock extra features, such as menus for restaurants, appointment links for salons or service lists for trades."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Google's guidelines ask businesses to use as few categories as possible to describe their core business, and to choose categories that are specific but representative. That is the principle behind everything below."
+      },
+      {
+        "type": "h2",
+        "text": "Step 1: Describe your business in one sentence"
+      },
+      {
+        "type": "p",
+        "text": "Before opening the category list, finish this sentence: \"We are a ___.\" Not \"we do ___\" — what you are. A dental practice. An Italian restaurant. An emergency plumber. A hair salon. A wedding photographer. That noun is usually your primary category, or close to it."
+      },
+      {
+        "type": "p",
+        "text": "If you find yourself writing a long list, ask what most of your customers come to you for. A cafe that also sells a few pastries to take away is still a cafe. A garage that mainly services cars but occasionally sells tyres is a car repair business first."
+      },
+      {
+        "type": "h2",
+        "text": "Step 2: Choose the most specific primary category that fits"
+      },
+      {
+        "type": "p",
+        "text": "Start typing in the category field and look at all the suggestions before choosing. Specific usually beats broad, as long as it is accurate."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "An electrician should usually choose \"Electrician\", not \"Contractor\".",
+          "A pizza takeaway may fit \"Pizza restaurant\" or \"Pizza delivery\" better than \"Restaurant\".",
+          "A practice offering general dental care fits \"Dentist\"; a practice that only does orthodontics may fit \"Orthodontist\".",
+          "A beauty business that mainly does nails fits \"Nail salon\" rather than \"Beauty salon\"."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "If you're unsure, search for your type of business in your area on Google Maps and look at the categories shown under competitors' names. Don't copy them blindly, but they can show you options you didn't know existed."
+      },
+      {
+        "type": "h2",
+        "text": "Step 3: Add additional categories only where they're true"
+      },
+      {
+        "type": "p",
+        "text": "Additional categories are for other things your business genuinely is, not for services it offers. A useful test: would a customer looking for this category be happy to find you, and would they walk in or call expecting exactly what you provide?"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "A bakery with a proper seating area and coffee menu could add \"Cafe\".",
+          "A plumber who also installs and repairs boilers could add \"Heating contractor\" if that is a real part of the business.",
+          "A hair salon that also offers barbering could add \"Barber shop\".",
+          "A gym that runs regular yoga classes with its own studio could add \"Yoga studio\"."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Don't add categories for something you do once in a while. A cafe that sells a few jars of honey is not a grocery store. Adding categories that don't match can confuse customers and may lead to edits or problems with your profile."
+      },
+      {
+        "type": "h2",
+        "text": "What keyword stuffing looks like"
+      },
+      {
+        "type": "p",
+        "text": "Keyword stuffing is trying to add extra search terms where they don't belong. It is against Google's guidelines and can put your profile at risk of edits or suspension. Common examples:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Business name: \"Smith Plumbing – Best Emergency Plumber Boston Cheap 24/7\" instead of the real name, \"Smith Plumbing\". Google asks you to use your real-world business name as it appears on your signage and stationery.",
+          "Categories: adding every loosely related category in the hope of showing up for more searches.",
+          "Description: a paragraph that is just a list of town names and services repeated several times.",
+          "Services and products: dozens of near-identical entries with a town name added to each one.",
+          "Posts: the same keyword phrase squeezed into every sentence."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Even if stuffing seems to work for a while, it creates risk. Competitors and customers can suggest edits, and Google may change your name or categories, or suspend the profile. It also reads badly to the people you actually want to call you."
+      },
+      {
+        "type": "h2",
+        "text": "Where your services and keywords should go instead"
+      },
+      {
+        "type": "p",
+        "text": "If you can't use the business name and categories for every service, where does that information belong? Google gives you several honest places:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Services: list the real services you offer, with short, clear descriptions.",
+          "Products: add products or packages with photos and prices where it makes sense.",
+          "Description: two or three short paragraphs explaining what you do, who you help and what makes you different, written for people.",
+          "Posts: regular updates about specific services, offers or seasonal work.",
+          "Photos: real pictures of your work, premises and team.",
+          "Reviews and replies: when customers mention a service in a review, a natural reply can reflect it without forcing keywords.",
+          "Your website: a clear page for each main service, linked from your profile."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Our article on how to use Google Business Profile posts gives a simple routine for posting about individual services each week, and our photo shot list covers the pictures worth adding."
+      },
+      {
+        "type": "h2",
+        "text": "When to change your category"
+      },
+      {
+        "type": "p",
+        "text": "It's fine to update your category when your business changes — for example, if a takeaway adds a dining room, or a salon stops offering a service. Avoid changing it frequently just to experiment. Major changes can trigger a review or ask you to verify again, so make sure the new category is accurate before you switch."
+      },
+      {
+        "type": "p",
+        "text": "Only the business owner, or someone they have properly authorised as a manager, should edit the profile. If you work with an agency, make sure they are added as a manager rather than given your login details, and that you remain the owner."
+      },
+      {
+        "type": "h2",
+        "text": "A quick category checklist"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Write one sentence that describes what your business is.",
+          "Choose the most specific primary category that matches it.",
+          "Add additional categories only for things your business genuinely is.",
+          "Use your real-world business name with no extra keywords.",
+          "Put services, areas and details in the services, description, posts and website.",
+          "Review your categories once or twice a year, or when your business changes."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "If you want to go further after this, our Google Business Profile optimisation checklist walks through the rest of the profile in order."
+      },
+      {
+        "type": "h2",
+        "text": "Want a second opinion?"
+      },
+      {
+        "type": "p",
+        "text": "Choosing categories is a small decision with a big effect, and it's easy to second-guess. DigitalPitch Technologies can review your Google Business Profile and suggest honest, guideline-friendly improvements to your categories, services and description. We don't promise rankings — we focus on making your profile accurate and useful for customers. Get in touch through our contact page to ask for a review."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-use-google-business-profile-posts",
+    "title": "How to Use Google Business Profile Posts (With Examples and Ideas)",
+    "description": "What Google Business Profile posts are, the three post types, a simple writing formula, 20 post ideas for local businesses and a realistic weekly routine.",
+    "category": "Google Business Profile",
+    "author": "Kaushik Singh",
+    "date": "2026-11-08",
+    "readingTime": "7 min read",
+    "tags": [
+      "GBP",
+      "Posts",
+      "Local SEO",
+      "Small Business",
+      "Google Maps"
+    ],
+    "content": [
+      {
+        "type": "p",
+        "text": "Google Business Profile posts are short updates you publish straight onto your listing on Google Search and Maps. They can announce an offer, promote an event, or simply tell people what's new. Many businesses ignore them because they're not sure what to post or whether anyone sees them. Others post once, forget about it, and leave a two-year-old update as the most recent thing a customer reads."
+      },
+      {
+        "type": "p",
+        "text": "Used well, posts are a simple way to keep your profile looking active and give people one more reason to call, book or visit. This guide covers the post types, what to write, how to add photos and buttons, what to avoid, and a realistic routine for a small business."
+      },
+      {
+        "type": "h2",
+        "text": "What Google Business Profile posts are (and aren't)"
+      },
+      {
+        "type": "p",
+        "text": "A post is a small card on your profile: a photo or video, some text, and optionally a button such as Book, Order online, Buy, Learn more, Sign up or Call now. People can see posts when they look at your profile, and older posts stay available further down as new ones are added."
+      },
+      {
+        "type": "p",
+        "text": "Posts are not a shortcut to ranking higher. Google decides local rankings mainly on relevance, distance and prominence, and nobody can promise that posting will move you up. Think of posts as a way to help the people who have already found your profile make a decision — that alone makes them worth doing."
+      },
+      {
+        "type": "h2",
+        "text": "The three post types"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Update (sometimes shown as \"Add update\" or \"What's new\"): general news — a new service, a seasonal tip, a team member joining, photos of recent work.",
+          "Offer: a promotion with a title, start and end dates, and optional coupon code, terms and a link. Use this only for real offers you will honour.",
+          "Event: something happening on specific dates, such as a workshop, open day, tasting night or late opening, with a title, start and end time and an optional button."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Offers and events have dates, so they naturally stop being relevant when they end. Updates are the everyday post type and will be most of what you publish."
+      },
+      {
+        "type": "h2",
+        "text": "How to create a post"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Search for your business name on Google while signed in to the account that manages the profile, or open the Google Business Profile manager.",
+          "Choose \"Add update\" (the option may also appear as \"Posts\" or a + button, depending on the screen).",
+          "Pick the post type: update, offer or event.",
+          "Add a photo or short video that clearly shows what the post is about.",
+          "Write the text (see the formula below) and add the details for offers or events.",
+          "Choose a button if it helps — for example Book for a salon or Call now for a plumber — and check the link works.",
+          "Preview and publish. Posts can be reviewed by Google before they appear, so allow some time and check back that it went live."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "If you manage the profile together with someone else, make sure they have been added properly as a manager by the owner. Only the business owner, or someone they authorise, should have access to the profile."
+      },
+      {
+        "type": "h2",
+        "text": "A simple formula for writing posts"
+      },
+      {
+        "type": "p",
+        "text": "Most good posts follow the same shape. Keep them short — people skim on their phones."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Start with what's in it for the customer: \"Need your boiler checked before winter?\"",
+          "Say what you're offering or what's new in one or two sentences.",
+          "Add one useful detail: price range, dates, who it suits, or how long it takes.",
+          "Finish with one clear next step that matches the button: \"Book a slot online\" or \"Call us to check availability.\""
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Example for a cafe: \"New winter menu is here. Try our spiced lentil soup and fresh sourdough, served every day from 11am. Order ahead and skip the queue.\" Example for a salon: \"Booking now for December party season. Blow-dries and updos available on weekday evenings and Saturdays. Book online to choose your time.\""
+      },
+      {
+        "type": "h2",
+        "text": "Photos that work in posts"
+      },
+      {
+        "type": "p",
+        "text": "The photo does most of the work. Use a clear, well-lit image that matches the text — the actual dish, the finished job, the room where the event will happen. Avoid images that are mostly text, logos on plain backgrounds or stock photos that don't show your real business. If you need ideas, our article on what photos to add to your Google Business Profile has a practical shot list you can reuse for posts."
+      },
+      {
+        "type": "h2",
+        "text": "What to post about: 20 ideas for local businesses"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "A new service, product or menu item",
+          "A seasonal reminder (winter boiler checks, summer AC servicing, Christmas bookings)",
+          "Holiday or special opening hours — and remember to update the actual hours too",
+          "A real before-and-after of recent work, with the customer's permission",
+          "A quick tip that answers a question customers often ask",
+          "An upcoming workshop, class, tasting or open day",
+          "A limited-time offer with clear dates and terms",
+          "A new team member and what they specialise in",
+          "Behind-the-scenes photos of preparation or equipment",
+          "New booking, ordering or payment options",
+          "Areas you've started serving (if you're a service-area business)",
+          "Gift cards or vouchers before holidays",
+          "A reminder of parking, access or how to find your entrance",
+          "Answers to common pricing questions",
+          "A thank-you to customers after a busy season (without quoting reviews you don't have permission to use)",
+          "A product restock",
+          "Changes to your process, such as new safety steps",
+          "A local event you're taking part in",
+          "A care or maintenance tip after a service",
+          "A reminder of how to book or contact you"
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "What to avoid"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Phone numbers in the post text. Google may reject posts that include them — use the Call now button instead.",
+          "Misleading offers, fake urgency or prices you won't honour.",
+          "Copying the same post every week. Repeats look automated and don't give people anything new.",
+          "Keyword stuffing, such as cramming your town name and service into every sentence. Write for people.",
+          "Posting about restricted or prohibited content under Google's policies, or anything you don't have the right to share (including customer photos without permission).",
+          "Letting the latest post go stale. An offer that ended months ago tells customers the profile isn't looked after."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "How often should you post?"
+      },
+      {
+        "type": "p",
+        "text": "There is no magic number. A realistic target for most small businesses is one useful post a week, or at least two a month. Consistency beats volume: four honest, useful posts a month look better than twenty rushed ones followed by silence. Before holidays and busy seasons, post a little more often so customers see your opening times and offers."
+      },
+      {
+        "type": "p",
+        "text": "A simple routine: block 20 minutes on the same day each week. Take one photo during the week, write the post using the formula above, publish it, and check the previous week's post is still accurate. If you're also updating hours for holidays, our guide to holiday hours on Google Business Profile covers that step by step."
+      },
+      {
+        "type": "h2",
+        "text": "Checking whether posts help"
+      },
+      {
+        "type": "p",
+        "text": "Google Business Profile shows performance information such as profile views and actions like calls, website clicks and direction requests. Look at trends over a few months rather than day to day, and note what you posted and when. If calls or bookings pick up after certain kinds of posts — offers, seasonal reminders, new services — do more of those. Be cautious about reading too much into a single week; many things affect enquiries."
+      },
+      {
+        "type": "h2",
+        "text": "Where posts fit in your overall profile"
+      },
+      {
+        "type": "p",
+        "text": "Posts are one part of a well-kept profile, not a replacement for the basics. Accurate categories, hours, contact details, service areas, photos and reviews come first. If those aren't in good shape yet, start with our Google Business Profile optimisation checklist, then add posting as a weekly habit."
+      },
+      {
+        "type": "h2",
+        "text": "Need a hand?"
+      },
+      {
+        "type": "p",
+        "text": "If you'd rather not think about posts every week, DigitalPitch Technologies can help you plan and write them alongside the rest of your Google Business Profile and website work. We'll keep it honest: useful posts, real photos and accurate information — no promises of guaranteed rankings. Get in touch through our contact page and tell us about your business."
+      }
+    ]
+  },
+  {
+    "slug": "what-photos-to-add-to-google-business-profile",
+    "title": "What Photos to Add to Your Google Business Profile (A Practical Shot List)",
+    "description": "A simple shot list of the photos every local business should add to its Google Business Profile, how to take them on a phone, and how to keep them fresh.",
+    "category": "Google Business Profile",
+    "author": "Kaushik Singh",
+    "date": "2026-10-29",
+    "readingTime": "7 min read",
+    "tags": [
+      "GBP",
+      "Photos",
+      "Local SEO",
+      "Small Business",
+      "Google Maps"
+    ],
+    "content": [
+      {
+        "type": "p",
+        "text": "When someone finds your business on Google Maps, the photos are usually the first thing they look at after your name and star rating. Photos answer questions faster than any description can: What does the place look like? Is it easy to find? Is it clean? Who will I be dealing with? What will I actually get?"
+      },
+      {
+        "type": "p",
+        "text": "Many profiles have only a logo and a few blurry pictures uploaded years ago, or a set of photos added by customers that don't show the business at its best. The fix is not complicated. This guide gives you a practical shot list, tips for taking good photos on a phone, and a simple routine for keeping your photos current."
+      },
+      {
+        "type": "h2",
+        "text": "Why photos matter on a Google Business Profile"
+      },
+      {
+        "type": "p",
+        "text": "Photos don't replace the basics — accurate categories, hours, address or service area, and reviews still matter most. But photos shape the decision a customer makes once they've found you. A clear picture of your entrance can save a confused phone call. A photo of your team makes a first visit feel less risky. A picture of finished work shows quality in a way a sentence can't."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "They help customers recognise your building or vehicle when they arrive.",
+          "They set expectations about price level, atmosphere and quality.",
+          "They give people a reason to choose you over a nearby listing with no photos.",
+          "They balance out customer-uploaded photos, which you don't control."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "The essential shot list"
+      },
+      {
+        "type": "p",
+        "text": "Not every business needs every shot, but most local businesses should cover these. Work through the list once, then add to it over time."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Logo. A clean, square version of your logo on a plain background. This is how your business is identified in many places on Google.",
+          "Cover photo. One strong image that represents the business well — your shopfront, your best-looking room, or your team at work. Avoid busy collages or text-heavy graphics.",
+          "Exterior, from the street. Take it from where a customer would approach, at different times of day if your signage is lit. Include the entrance and any sign so people know they're in the right place.",
+          "Entrance and parking. If your door is around the side, upstairs or inside a larger building, show it. If there's parking, show where it is.",
+          "Interior. Reception, waiting area, the main room, the counter. Shoot with the lights on and the space tidy.",
+          "Your team. A friendly photo of the people customers will meet, taken with their permission. For service businesses this is often one of the most reassuring images on the profile.",
+          "Products or work. For shops and restaurants, your best-selling items. For trades and service businesses, real examples of finished work.",
+          "At work. A photo of a job in progress, a chef plating food, a stylist with a client (with consent). These show how you work, not just the result."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Shot ideas by business type"
+      },
+      {
+        "type": "p",
+        "text": "The essentials apply to everyone, but each industry has a few photos customers look for specifically."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Restaurants and cafes: popular dishes, the menu board, seating areas, outdoor tables if you have them, and the counter where people order. Our guide to Google Business Profile for restaurants and cafes covers menus and other setup details.",
+          "Salons and spas: treatment rooms, styling stations, finished looks (with the client's permission), and the products you use or sell.",
+          "Plumbers, electricians and other trades: your branded van, your team in uniform, tidy finished installations, and before-and-after pairs of real jobs. Never use someone else's work.",
+          "Dentists and clinics: reception, a treatment room, accessible entrances and the team. Never show patients or anything that reveals personal information.",
+          "Retail shops: the shopfront, aisles or displays, featured products and the checkout area.",
+          "Gyms and studios: the main floor, equipment, changing rooms and a class in progress, with participants' consent."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "How to take good photos on a phone"
+      },
+      {
+        "type": "p",
+        "text": "You don't need a professional photographer to have a strong set of photos, although one can help. A modern phone and a little care go a long way."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Use natural light where you can. Open blinds and turn on all the lights inside. Avoid shooting straight into a bright window.",
+          "Clean the lens. A quick wipe removes the haze that makes many phone photos look soft.",
+          "Tidy first. Move boxes, cables, mops and personal items out of the frame.",
+          "Hold the phone level. Tilted walls and door frames make a space look smaller and messier.",
+          "Shoot both landscape and square versions of your key images, because photos are cropped differently in different places.",
+          "Skip heavy filters and text overlays. Google's guidelines ask that photos represent the business as it really is, and customers trust natural-looking images more.",
+          "Check Google's current photo requirements in its help pages for file format and size before uploading."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "What to avoid"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Stock photos. A generic picture of a smiling plumber or a perfect salad tells customers nothing about you, and it can undermine trust when the real thing looks different.",
+          "Photos that aren't yours. Only upload images you took or have permission to use.",
+          "Images of customers or patients without clear consent.",
+          "Promotional graphics with prices, phone numbers or offers baked in. Use Google Business Profile posts for offers instead.",
+          "Outdated photos. If you've renovated, rebranded or moved, replace the old images."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Handling customer-uploaded photos"
+      },
+      {
+        "type": "p",
+        "text": "Customers can add their own photos to your profile. Most are helpful and genuine, and you can't simply delete ones you don't like. If a photo is clearly inappropriate, unrelated to your business or breaks Google's content policies, you can report it from the profile. The better long-term answer is to upload enough good, current photos of your own that the customer images are part of a fuller picture rather than the whole story."
+      },
+      {
+        "type": "h2",
+        "text": "A simple photo routine"
+      },
+      {
+        "type": "p",
+        "text": "Photos work best when they're kept up to date. A light routine is enough for most small businesses."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Do one full shoot using the shot list above and upload the best images.",
+          "Add a few new photos each month — new products, a recent job, a seasonal display.",
+          "Update your cover photo when something significant changes, such as a refit or a new season.",
+          "Every quarter, look at your profile as a customer would and replace anything outdated or low quality.",
+          "Around the holidays, add photos of seasonal stock or decorations, and check your hours at the same time. Our article on holiday hours on Google Business Profile has a seasonal checklist."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Photos are one part of a complete profile"
+      },
+      {
+        "type": "p",
+        "text": "Good photos make a strong profile better, but they work alongside everything else: correct categories, consistent name, address and phone details across the web, regular reviews and helpful replies. If you want to see where your profile stands overall, our Google Business Profile optimisation checklist walks through the main areas. No one can promise a particular ranking on Google Maps, but a complete, accurate and well-photographed profile gives customers every reason to choose you once they find you."
+      },
+      {
+        "type": "p",
+        "text": "If you'd like help planning a photo shoot or tidying up your Google Business Profile, DigitalPitch Technologies can review your profile and suggest practical next steps. Get in touch through our contact page."
+      }
+    ]
+  },
+  {
+    "slug": "holiday-hours-google-business-profile",
+    "title": "Holiday Hours on Google Business Profile: Seasonal Updates That Prevent Wasted Trips",
+    "description": "Set holiday and special hours on your Google Business Profile so customers never arrive to a locked door, plus a simple seasonal checklist for local businesses.",
+    "category": "Google Business Profile",
+    "author": "Kaushik Singh",
+    "date": "2026-10-28",
+    "readingTime": "7 min read",
+    "tags": [
+      "GBP",
+      "Holiday Hours",
+      "Local SEO",
+      "Special Hours",
+      "Small Business"
+    ],
+    "content": [
+      {
+        "type": "p",
+        "text": "Before most people drive across town or pick up the phone, they check your hours on Google. Most of the year that works fine. Then the holidays arrive, your hours change for a few days, and the listing still shows your normal schedule. Someone turns up to a locked door, or calls a phone nobody is answering, and leaves annoyed."
+      },
+      {
+        "type": "p",
+        "text": "Holiday hours are one of the simplest things you can fix on your Google Business Profile, and one of the easiest to forget. This guide walks through why they matter, how to set them, and what else to update so customers get the right information all season."
+      },
+      {
+        "type": "h2",
+        "text": "Why holiday hours matter"
+      },
+      {
+        "type": "p",
+        "text": "Your Google Business Profile is often the first place a customer sees your opening times. If those times are wrong, the customer pays for it, and then you do."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "A wasted trip. Someone plans their day around your listed hours and finds you closed.",
+          "A poor first impression. A new customer who has a bad experience before they even get through the door may not try again.",
+          "A frustrated review. People who feel misled sometimes say so publicly, and a review about wrong hours is avoidable.",
+          "Lost business the other way round. If you are open on a day when people assume you are closed, clear hours on your profile tell them they can still come in."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "To be clear, setting holiday hours is not a ranking trick. It is about giving customers accurate information so they trust what they see. That trust is worth protecting on its own."
+      },
+      {
+        "type": "h2",
+        "text": "How to set special hours on Google Business Profile"
+      },
+      {
+        "type": "p",
+        "text": "Google lets you add special hours for specific dates without changing your regular weekly schedule. The interface changes from time to time, so treat this as a general guide rather than an exact set of clicks."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Sign in to the Google account that manages your Business Profile and open the profile editor.",
+          "Find the Hours section and look for the option labelled \"Special hours\".",
+          "Add the date you want to change.",
+          "Either enter the different opening and closing times for that day, or mark the day as closed.",
+          "Repeat for each date, then save and check how the listing looks."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Your regular hours stay as they are, and the special hours apply only to the dates you set. Google may sometimes prompt owners to confirm their hours around major holidays. If you see that prompt, take a moment to check each date rather than confirming without looking."
+      },
+      {
+        "type": "p",
+        "text": "Only the business owner, or someone the owner has authorised, should manage or verify the profile. If someone else helps you, give them access through the profile's own user settings rather than sharing your password."
+      },
+      {
+        "type": "h2",
+        "text": "Build a simple seasonal calendar"
+      },
+      {
+        "type": "p",
+        "text": "The easiest way to avoid last-minute mistakes is to decide your holiday hours in advance and write them down in one place. Start with the dates that affect most businesses at the end of the year:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Christmas Eve",
+          "Christmas Day",
+          "Boxing Day, where it is a holiday in your area",
+          "New Year's Eve",
+          "New Year's Day"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Then add the dates that matter to your own community and your own team. Depending on where you are and who you serve, that might include Diwali, Eid, Lunar New Year, Easter, Thanksgiving, national days, regional bank holidays or a local festival that closes your street. Add any days you plan to close for staff training, stocktaking or a family event too."
+      },
+      {
+        "type": "p",
+        "text": "Aim to update your profile a few weeks ahead of each date. That gives customers who plan early the right information, and it gives you time to fix anything that does not look right."
+      },
+      {
+        "type": "h2",
+        "text": "Seasonal changes beyond opening hours"
+      },
+      {
+        "type": "p",
+        "text": "Hours are the main thing, but a few other updates help the season go smoothly."
+      },
+      {
+        "type": "p",
+        "text": "Temporary closures. Google Business Profile has a \"temporarily closed\" status. Use it only for a real temporary closure, such as a renovation or an extended break of a week or more. For a single holiday, use special hours and mark that day closed. Switching the whole profile to temporarily closed for one day can confuse customers and is easy to forget to switch back."
+      },
+      {
+        "type": "p",
+        "text": "Seasonal services or menu. If you add a festive menu, holiday gift packages or seasonal services, update your products, services or menu so people know what is available. Remove them once the season ends. If you run a food business, our guide \"Google Business Profile for Restaurants and Cafes\" covers menus and bookings in more detail."
+      },
+      {
+        "type": "p",
+        "text": "A post announcing your holiday hours. A short Google Business Profile post is a friendly way to spell out your schedule in plain words, for example which days you are closed and when you reopen. It does not replace special hours, but it helps people who are scrolling your profile."
+      },
+      {
+        "type": "p",
+        "text": "Your website and other listings. Customers may check your website, social pages, maps apps or directories as well as Google. If your hours differ from one place to another, people will not know which to believe. Update your hours everywhere you can, and make sure your name, address and phone number match too. Our article \"NAP Consistency and Local Citations\" explains why that matters and how to check."
+      },
+      {
+        "type": "p",
+        "text": "Phone and voicemail. If you are closed, record a short voicemail that gives your holiday hours and when you will return calls. If you have an online booking or ordering system, block out the closed dates there as well."
+      },
+      {
+        "type": "p",
+        "text": "Likely questions. Think about what people will ask during the season, such as last order dates, gift card availability or delivery cut-offs, and answer them clearly on your profile, website and in your post."
+      },
+      {
+        "type": "h2",
+        "text": "After the holidays"
+      },
+      {
+        "type": "p",
+        "text": "The work is not quite done when the season ends. Spend a few minutes tidying up."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Check that special hours for past dates have expired and your regular hours are showing again.",
+          "Switch off \"temporarily closed\" if you used it, and confirm the profile shows you as open.",
+          "Remove seasonal menu items, services and offers that are no longer available.",
+          "Update your website, voicemail and other listings back to normal hours.",
+          "Read new reviews and reply politely to each one, including any about hours or closures. A calm, honest reply shows other customers you care."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "This is also a good moment for a broader check of your profile. Our \"Google Business Profile Optimisation Checklist\" walks through the main areas to review."
+      },
+      {
+        "type": "h2",
+        "text": "Holiday hours checklist"
+      },
+      {
+        "type": "p",
+        "text": "Copy this list and work through it a few weeks before each holiday period."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "List every holiday and closure date for the season, including local and religious holidays.",
+          "Decide opening hours or closure for each date.",
+          "Add each date under Special hours on your Google Business Profile.",
+          "Use temporarily closed only for a genuine extended closure.",
+          "Update seasonal services, products or menu.",
+          "Publish a short post announcing your holiday hours.",
+          "Update hours on your website, social pages and other listings.",
+          "Check name, address and phone number match everywhere.",
+          "Record a holiday voicemail message.",
+          "Block closed dates in any booking or ordering system.",
+          "Answer likely seasonal questions in advance.",
+          "After the season, confirm regular hours are back and reply to new reviews."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Need a hand before the holidays?"
+      },
+      {
+        "type": "p",
+        "text": "If you would like a second pair of eyes on your listing, DigitalPitch Technologies can review your Google Business Profile, set up your holiday hours and check your website and listings match. We cannot promise rankings, and nobody honestly can, but we can help make sure customers see accurate information when they look you up. Get in touch through our contact page and we will take it from there."
+      }
+    ]
+  },
+  {
     "slug": "google-business-profile-for-dentists-and-clinics",
     "title": "Google Business Profile for Dentists and Clinics: Setup, Practitioners and Reviews",
     "description": "A practical guide for dental practices, physiotherapy and other clinics on setting up a Google Business Profile: practice vs practitioner listings, categories, services, hours, photos, bookings and handling reviews without breaching patient confidentiality.",
