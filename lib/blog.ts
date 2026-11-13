@@ -23,6 +23,163 @@ export interface BlogPost {
 
 export const POSTS: BlogPost[] = [
   {
+    "slug": "can-you-remove-a-google-review",
+    "title": "Can You Remove a Google Review? What's Allowed and What Isn't",
+    "description": "Which Google reviews can be removed, how to report reviews that break Google's policies, what to do with negative but genuine reviews, and the shortcuts to avoid.",
+    "category": "Reviews",
+    "author": "Kaushik Singh",
+    "date": "2026-11-13",
+    "readingTime": "7 min read",
+    "tags": [
+      "Google Reviews",
+      "GBP",
+      "Reputation",
+      "Small Business",
+      "Local SEO"
+    ],
+    "content": [
+      {
+        "type": "p",
+        "text": "A bad Google review can sting, especially when it feels unfair. The first question most owners ask is: can I just get it removed? The honest answer is sometimes — but only when the review breaks Google's rules. A review being negative, harsh or one-sided is not on its own a reason Google will take it down."
+      },
+      {
+        "type": "p",
+        "text": "This guide explains what kinds of reviews can be removed, how to report them properly, what to do when a review is negative but genuine, and the shortcuts that can get your profile into trouble."
+      },
+      {
+        "type": "h2",
+        "text": "What Google will and won't remove"
+      },
+      {
+        "type": "p",
+        "text": "Google publishes policies for user-generated content on Maps, including reviews. Reviews that break those policies can be reported and may be removed. Reviews that are simply critical usually stay up, even if you disagree with them."
+      },
+      {
+        "type": "p",
+        "text": "Examples of reviews that may break the rules include:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Spam and fake engagement: reviews posted by bots, review swaps, or reviews that weren't based on a real experience.",
+          "Off-topic content: rants about politics, news or something unrelated to the business.",
+          "Conflicts of interest: reviews written by a competitor, a former employee about their employer, or the business owner about themselves.",
+          "Offensive content: hateful, harassing or sexually explicit language.",
+          "Personal information: phone numbers, home addresses or other private details about a person.",
+          "Impersonation: a review written while pretending to be someone else.",
+          "Illegal or dangerous content: anything promoting illegal activity or violence."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Reviews that usually will not be removed include a low star rating with no text, a customer describing a bad experience in their own words, criticism of your prices or service, and reviews you believe are exaggerated but that describe a real visit. Google's policies can change, so check the current rules in the Google Business Profile Help Center before you report."
+      },
+      {
+        "type": "h2",
+        "text": "How to report a review that breaks the rules"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Sign in to the Google account that owns or manages your Business Profile.",
+          "Find the review on your profile (through Google Search, Google Maps or the Business Profile manager).",
+          "Use the option to report the review (usually shown as \"Report review\" or a flag icon next to it).",
+          "Choose the reason that best matches the policy it breaks. Be accurate — choosing the wrong reason makes a successful report less likely.",
+          "Submit the report and note the date."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Google also offers a Reviews Management Tool where you can see reviews you've reported, check their status and, in some cases, appeal a decision. Look it up in the Business Profile Help Center if you need to follow up."
+      },
+      {
+        "type": "p",
+        "text": "Be patient. Reviews are not removed instantly, and not every report will succeed. Report each policy-breaking review once with the correct reason rather than reporting the same review over and over."
+      },
+      {
+        "type": "h2",
+        "text": "What about reviews you think are fake?"
+      },
+      {
+        "type": "p",
+        "text": "If you genuinely can't find any record of the reviewer as a customer, report the review under the most accurate reason and keep a note of why you believe it isn't genuine (for example, no booking, order or visit matches the name or date). If a sudden wave of suspicious reviews appears, report each one and contact Google Business Profile support through the official help channels."
+      },
+      {
+        "type": "p",
+        "text": "If you believe a review is defamatory or otherwise unlawful, that is a legal matter rather than a policy one. Google has a separate legal removal request process. In that situation it's worth getting advice from a qualified lawyer in your country before taking action."
+      },
+      {
+        "type": "h2",
+        "text": "What to do when the review is negative but real"
+      },
+      {
+        "type": "p",
+        "text": "Most negative reviews describe real experiences, even if the reviewer only tells part of the story. These won't be removed, but you can still reduce their impact:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Reply calmly and professionally. Thank them, acknowledge the issue, and offer to continue the conversation privately.",
+          "Don't argue publicly or share private details about the customer, even if they're wrong.",
+          "Fix the underlying problem if there is one. Future customers care more about how you respond than about one bad visit.",
+          "Keep earning genuine reviews from happy customers, so one bad review sits among many accurate ones."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Our guide on how to reply to a negative Google review includes example replies for common situations, and our article on how to ask customers for Google reviews covers simple, honest ways to get more reviews from real customers."
+      },
+      {
+        "type": "h2",
+        "text": "Shortcuts to avoid"
+      },
+      {
+        "type": "p",
+        "text": "Some \"solutions\" make things worse. Avoid these:"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Paying someone to remove reviews. Nobody outside Google can remove a review on demand, and services that promise this are a common scam.",
+          "Buying positive reviews or asking friends and staff to post reviews to drown out a bad one. This counts as fake engagement and can lead to reviews being removed or restrictions on your profile.",
+          "Offering discounts or gifts in exchange for reviews, or only for positive reviews. Incentivised reviews are against Google's policies.",
+          "Review gating: asking customers how they felt first and only sending happy ones to Google. Ask everyone in the same way.",
+          "Pressuring or threatening a reviewer to delete their review."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Can a customer remove their own review?"
+      },
+      {
+        "type": "p",
+        "text": "Yes. A reviewer can edit or delete their own review at any time. If you resolve a complaint, it's fine to let them know they're welcome to update their review if they feel differently now. Don't make a refund or fix conditional on changing the review, and don't push if they decline."
+      },
+      {
+        "type": "h2",
+        "text": "A simple review routine"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Check new reviews once or twice a week.",
+          "Reply to every negative review within a few days, and to positive ones when you can.",
+          "Report only the reviews that clearly break Google's policies, using the correct reason.",
+          "Keep a short log of reported reviews and their outcomes.",
+          "Ask every satisfied customer for a review, in the same way, without incentives."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Need help managing reviews?"
+      },
+      {
+        "type": "p",
+        "text": "If reviews are taking up more time than you'd like, DigitalPitch Technologies can help you set up a simple routine for monitoring, replying and asking for genuine reviews. We won't promise to remove reviews or guarantee a rating — we'll help you respond well and build an honest track record. Contact us through our website to talk it through."
+      }
+    ]
+  },
+  {
     "slug": "choosing-google-business-profile-categories",
     "title": "Choosing Google Business Profile Categories Without Keyword Stuffing",
     "description": "How Google Business Profile categories work, how to pick the right primary and additional categories, and where your services and keywords belong instead of the business name.",
